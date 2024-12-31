@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <style>
+        .CheckPriceDesktop__checkValuationContainer, .CheckPriceDesktop__leftSection, .CheckPriceDesktop__truePriceWrap {
+    align-items: center;
+    background-color: #2e054e;
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 16px;
+    padding: 24px;
+    position: relative;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Housp - HTML Real Estate Template">
+
+    <title>Housp</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/all.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/jquery.magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/nouislider@15.7.0/dist/nouislider.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <main class="x-hidden">
+        <!-- Header Area Start -->
+        <header>
+    <div class="banner-tabs">
+        <!-- Product Tabs -->
+        <div class="prod-tabs tabs-box">
+
+
+            <!-- Tabs Container -->
+            <div class="tabs-content">
+
+                <!-- Tab -->
+                <div class="tab active-tab" id="prod-buy">
+                    <div class="content-form">
+                        <!-- Default Form -->
+                        <div class="default-form">
+
+                            <div class="row clearfix">
+
+                                <!-- <div class="col-md-2">
+                                    <select name="country" class="custom-select-box">
+                                        <option>Delhi/NCR</option>
+                                        <option>Gurugram</option>
+                                        <option>Noida</option>
+                                    </select>
+                                </div> -->
+                                <div class="col-md-7">
+                                    <input type="text" id="properties" placeholder="Search by locality, Area, Street, etc.">
+                                </div>
+
+                                <div class="col-md-1">
+                                    <div class="button-box dropdown">
+
+                                        <!-- <button class="filter dropdown-toggle" type="button" id="filterDropdown"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><svg width="18" height="18"
+                                                viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3 10.5V0.75M3 10.5C3.39782 10.5 3.77936 10.658 4.06066 10.9393C4.34196 11.2206 4.5 11.6022 4.5 12C4.5 12.3978 4.34196 12.7794 4.06066 13.0607C3.77936 13.342 3.39782 13.5 3 13.5M3 10.5C2.60218 10.5 2.22064 10.658 1.93934 10.9393C1.65804 11.2206 1.5 11.6022 1.5 12C1.5 12.3978 1.65804 12.7794 1.93934 13.0607C2.22064 13.342 2.60218 13.5 3 13.5M3 17.25V13.5M15 10.5V0.75M15 10.5C15.3978 10.5 15.7794 10.658 16.0607 10.9393C16.342 11.2206 16.5 11.6022 16.5 12C16.5 12.3978 16.342 12.7794 16.0607 13.0607C15.7794 13.342 15.3978 13.5 15 13.5M15 10.5C14.6022 10.5 14.2206 10.658 13.9393 10.9393C13.658 11.2206 13.5 11.6022 13.5 12C13.5 12.3978 13.658 12.7794 13.9393 13.0607C14.2206 13.342 14.6022 13.5 15 13.5M15 17.25V13.5M9 4.5V0.75M9 4.5C9.39782 4.5 9.77936 4.65804 10.0607 4.93934C10.342 5.22064 10.5 5.60218 10.5 6C10.5 6.39782 10.342 6.77936 10.0607 7.06066C9.77936 7.34196 9.39782 7.5 9 7.5M9 4.5C8.60218 4.5 8.22064 4.65804 7.93934 4.93934C7.65804 5.22064 7.5 5.60218 7.5 6C7.5 6.39782 7.65804 6.77936 7.93934 7.06066C8.22064 7.34196 8.60218 7.5 9 7.5M9 17.25V7.5"
+                                                    stroke="#662D91" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                        </button>
+                                         -->
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <!-- Button Box -->
+                                    <div class="button-box ">
+                                        <button type='button' class="submit-btn cus-btn flaticon-search-interface-symbol" onclick="searchProperties()">
+                                            <i class="fa fa-search"></i> Search</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab -->
+                <div class="tab " id="prod-sell">
+                    <div class="content-form">
+                        <!-- Default Form -->
+                        <div class="default-form">
+
+                            <div class="row clearfix">
+
+                                <div class="col-md-2">
+                                    <select name="country" class="custom-select-box">
+                                        <option selected>Delhi/NCR</option>
+                                        <option>Gurugram</option>
+                                        <option>Faridabad</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-7">
+                                    <input type="text" placeholder="search by locality, Area, Street, etc.">
+                                </div>
+
+
+
+                                <div class="col-md-3">
+                                    <!-- Button Box -->
+                                    <div class="button-box ">
+                                        <button class="submit-btn cus-btn flaticon-search-interface-symbol">
+                                            <i class="fa fa-search"></i> Sell</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row row-gap-4 mb-80" id="propertyList">
+       
+    </div>
+
+    </header>
+    </main>
+<!-- <div class="row">
+<div class="col-md-6 m-auto"> -->
+    <canvas id="myChart" width="400" height="200"></canvas>
+<!-- </div>
+</div> -->
+    
+
+    <!-- back-to-top-end -->
+    <!-- Jquery Js -->
+    <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery-appear.js"></script>
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/wow.js"></script>
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/vendor/price-range.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wnumb/wNumb.min.js"></script>
+<!-- Include Moment.js -->
+<script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+
+<!-- Include Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Include Chart.js Moment Adapter -->
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment"></script>
+
+
+
+<script>
+
+
+    // Function to search and create charts
+    function searchProperties(){
+        $('#propertyList').html('');
+        $.ajax({
+            type: 'GET',  // HTTP method
+            url: "http://localhost:3000/getPriceData",
+            data: { keyword: $('#properties').val() },
+            dataType: 'json',
+            success: function (data, status, xhr) {
+                if (status == "success") {
+                    console.log(data.data);
+
+                    let properties = data.data.cardItem;
+                    let localityTrends = JSON.parse(data.data.localityTrends); 
+
+                // // Step 1: Convert price strings to numbers in lakhs
+                // function extractPriceInLakhs(priceStr) {
+                // return parseFloat(priceStr.replace(/[₹,Cr ]/g, "")) * 100; // ₹1 Cr = 100 lakhs
+                // }
+                function extractPriceInLakhs(priceStr) {
+    priceStr = priceStr.replace(/[₹, ]/g, "").toLowerCase(); // Clean string
+
+    if (priceStr.includes("cr")) {
+        // Convert Crores to Lakhs
+        return parseFloat(priceStr.replace("cr", "")) * 100;
+    } else if (priceStr.includes("lac")) {
+        // Keep Lakhs as is
+        return parseFloat(priceStr.replace("lac", ""));
+    } else if (priceStr.includes("k") || priceStr.includes("thousand")) {
+        // Convert Thousands to Lakhs
+        return parseFloat(priceStr.replace(/k|thousand/g, "")) / 10;
+    } else {
+        // Handle unexpected formats or assume direct lakhs
+        const num = parseFloat(priceStr);
+        return isNaN(num) ? 0 : num; // Avoid NaN errors
+    }
+}
+
+
+              
+// Step 1: Extract price values in Lakhs
+const prices = properties.map(prop => extractPriceInLakhs(prop.price));
+
+// Step 2: Find Min and Max Prices
+const minPrice = Math.min(...prices);
+const maxPrice = Math.max(...prices);
+
+// Step 3: Format price range
+function formatPrice(priceInLakhs) {
+    if (priceInLakhs >= 100) {
+        return `₹ ${(priceInLakhs / 100).toFixed(2)} Cr`;
+    } else {
+        return `₹ ${priceInLakhs} Lac`;
+    }
+}
+
+
+
+                // Step 5: Display range
+                const priceRange = `From: ${formatPrice(minPrice)} to: ${formatPrice(maxPrice)}`;
+
+                let content = `<div class="CheckPriceDesktop__truePriceWrap">
+                    <div class="CheckPriceDesktop__contentSection">${priceRange}</div>
+                </div>`;
+
+
+
+                    // propertyList.forEach(element => {
+                    //     content +=`
+                    //         <div class="col-lg-4 col-sm-6">
+                    //             <div class="property-card shadow wow fadeInUp animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+                    //                 <div class="img-block image-anime">
+                    //                     <img class="property-img" src="assets/media/properties/property-1.png" alt="">
+                    //                     <a href="property-detail.html" class="detail-link">View Detail</a>
+                    //                     <img class="category-title-bg" src="assets/media/shapes/card-tag-bg.png" alt="">
+                    //                     <h6 class="category-title">For Sale</h6>
+                    //                 </div>
+                    //                 <div class="text-block">
+                    //                     <a href="property-detail.html" class="title h5 mb-8">${element.heading}</a>
+                    //                     <div class="location mb-24">
+                    //                         <img src="assets/media/icons/location.svg" alt="">
+                    //                         <span>${element.title}</span>
+                    //                     </div>
+                    //                     <h6 class="price color-primary mb-24">${element.price}</h6>
+                    //                     <ul class="unstyled amenities">
+                    //                         <li>
+                    //                             <img src="assets/media/icons/bed.svg" alt="">
+                    //                             <span>4 Bedrooms</span>
+                    //                         </li>
+                    //                         <li>
+                    //                             <img src="assets/media/icons/shower.svg" alt="">
+                    //                             <span>${element.areaTypeSq}</span>
+                    //                         </li>
+                    //                         <li>
+                    //                             <img src="assets/media/icons/area.svg" alt="">
+                    //                             <span>${element.perSqFt}</span>
+                    //                         </li>
+                    //                     </ul>
+                    //                 </div>
+                    //             </div>
+                    //         </div>`;
+                    // });
+
+                    $('#propertyList').html(content);
+
+                    if (localityTrends != '') {
+                        console.log(localityTrends,"okk");
+                        
+                        localityTrends.forEach(localityData => {
+                            const labels = localityData.dataPoints.map(point => moment(point.xVal).toDate());  // Convert xVal to JavaScript Date
+                            const prices = localityData.dataPoints.map(point => point.yVal);  // Prices for y-axis
+                            
+                            // Call the function to create the chart
+                            createChart(labels, prices, localityData);
+                        });
+                    }
+                } else {
+                    alert("Upload Failed");
+                }
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                console.log(jqXhr.responseJSON.message);
+            }
+        });
+    }
+
+   // Function to create the chart
+function createChart(labels, prices, localityData) {
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const chartCanvas = document.getElementById('myChart');
+
+    chartCanvas.style.height = '50vh';  // 50% of the viewport height
+    chartCanvas.style.width = '50vw';   // 50% of the viewport width
+
+    new Chart(ctx, {
+        type: 'line',  // Line chart
+        data: {
+            labels: labels,  // x-axis labels (dates)
+            datasets: [{
+                label: `${localityData.name} Price Trends`,  // Title of the dataset
+                data: prices,  // y-axis values (property prices)
+                borderColor: localityData.strokeColorCode,  // Line color
+                backgroundColor: localityData.fillColorCode,  // Fill color
+                borderWidth: 2,
+                fill: true,  // Fill the area under the line
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                x: {
+                    type: 'time',  // Time scale for x-axis
+                    time: {
+                        unit: 'year',  // Adjust the granularity of the dates (e.g., per year)
+                        tooltipFormat: 'll',  // Format for tooltips (long format)
+                    },
+                    title: {
+                        display: true,
+                        text: 'Year'  // Title for x-axis
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Price (₹/sqft)'  // Title for y-axis
+                    }
+                }
+            }
+        }
+    });
+}
+
+</script>
+
+
+
+</html>

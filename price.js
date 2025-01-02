@@ -17,7 +17,6 @@ const getData = async (keyword) => {
  
     const browser = await puppeteer.launch({
         headless: true, 
-        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
         args: [
              '--disable-setuid-sandbox',
             '--no-sandbox',

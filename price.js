@@ -202,6 +202,12 @@ app.get("/getPriceData", async (req, res) => {
     }
 });
 
+app.get("/test", (req, res) => {
+    res.send({
+  "message":"working!!!!"      
+    })
+})
+
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
